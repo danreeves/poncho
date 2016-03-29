@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="50" tilewidth="21" tileheight="21" nextobjectid="5">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="50" tilewidth="21" tileheight="21" nextobjectid="7">
  <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" margin="2" tilecount="900" columns="30">
   <image source="../img/Platformer-Art-Pixel-Redux/spritesheet.png" width="692" height="692"/>
+  <tile id="7">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0">
+     <polygon points="0,0 0,20.5336 20.7273,20.7273"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="yellow" value="yep"/>
+   </properties>
+   <objectgroup draworder="index"/>
+  </tile>
  </tileset>
  <layer name="Ground" width="25" height="50">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-4,4,4,4,4,4,4,4,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4,4,4,4,4,4,4,4,8,0,0,0,131,0,131,0,0,0,0,0,0,0,0,0,0,
 33,33,33,33,33,33,33,33,38,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 33,33,33,33,33,33,33,33,33,38,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 33,33,33,33,33,33,33,33,33,33,38,4,4,4,4,4,0,0,0,0,0,0,0,0,0,

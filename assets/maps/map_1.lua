@@ -1,14 +1,14 @@
 return {
   version = "1.1",
   luaversion = "5.1",
-  tiledversion = "v0.15.1-76-g0cd1368",
+  tiledversion = "v0.15.2-100-gd5be8ea",
   orientation = "orthogonal",
   renderorder = "right-down",
   width = 25,
   height = 50,
   tilewidth = 21,
   tileheight = 21,
-  nextobjectid = 5,
+  nextobjectid = 7,
   properties = {},
   tilesets = {
     {
@@ -28,7 +28,56 @@ return {
       properties = {},
       terrains = {},
       tilecount = 900,
-      tiles = {}
+      tiles = {
+        {
+          id = 7,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            properties = {},
+            objects = {
+              {
+                id = 0,
+                name = "",
+                type = "",
+                shape = "polygon",
+                x = 0,
+                y = 0,
+                width = 0,
+                height = 0,
+                rotation = 0,
+                visible = true,
+                polygon = {
+                  { x = 0, y = 0 },
+                  { x = 0, y = 20.5336 },
+                  { x = 20.7273, y = 20.7273 }
+                },
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 130,
+          properties = {
+            ["yellow"] = "yep"
+          },
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            properties = {},
+            objects = {}
+          }
+        }
+      }
     }
   },
   layers = {
@@ -43,12 +92,14 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      properties = {},
+      properties = {
+        ["collidable"] = "true"
+      },
       encoding = "lua",
       data = {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        4, 4, 4, 4, 4, 4, 4, 4, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        4, 4, 4, 4, 4, 4, 4, 4, 8, 0, 0, 0, 131, 0, 131, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         33, 33, 33, 33, 33, 33, 33, 33, 38, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         33, 33, 33, 33, 33, 33, 33, 33, 33, 38, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 38, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0,
