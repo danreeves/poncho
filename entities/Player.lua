@@ -1,4 +1,5 @@
 local Player = {
+    isPlayer = true,
     collides = true,
     sprite = {},
     x = 0,

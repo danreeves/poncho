@@ -20,7 +20,6 @@ function Intro:init()
 
     for k, obj in pairs(self.map.objects) do
         if obj.name == 'Player' then
-            print('player', obj)
             world:addEntity(require('entities.Player'):new(obj, 'assets/img/char.png'))
             break
         end

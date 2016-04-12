@@ -4,6 +4,7 @@ gamestate = require('lib.hump.gamestate')
 local Intro = require('states.Intro')
 
 function love.load()
+    if arg[#arg] == "-debug" then require("mobdebug").start() end
     love.graphics.setDefaultFilter('nearest', 'nearest')
     gamestate.registerEvents()
     gamestate.switch(Intro:new('assets/maps/map_1.lua'))
@@ -24,4 +25,3 @@ function love.draw()
         world:update(dt, drawSystems)
     end
 end
-
