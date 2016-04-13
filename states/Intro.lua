@@ -15,6 +15,7 @@ function Intro:init()
     local world = tiny.world(
         require('systems.MapUpdate'):new(self.map),
         require('systems.MapDraw'):new(self.map),
+        require('systems.PlayerController'),
         require('systems.SpriteDraw')
     )
 
